@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - Impulso Laboral</title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+    <div class="login-container">
+        <!-- Left Side - Info -->
+        <div class="login-info">
+            <h1>IMPULSO LABORAL</h1>
+            <p>Únete a miles de profesionales que han encontrado su oportunidad ideal con nosotros</p>
+            
+            <div class="benefits">
+                <div class="benefit-item">
+                    <div class="benefit-icon">🎯</div>
+                    <div class="benefit-text">
+                        <h3>Oportunidades Exclusivas</h3>
+                        <p>Accede a vacantes verificadas de empresas líderes</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">⚡</div>
+                    <div class="benefit-text">
+                        <h3>Proceso Rápido</h3>
+                        <p>Aplica con un solo clic y recibe respuestas inmediatas</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">🔔</div>
+                    <div class="benefit-text">
+                        <h3>Alertas Personalizadas</h3>
+                        <p>Recibe notificaciones de vacantes que se ajusten a tu perfil</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Side - Form -->
+        <div class="login-form-container">
+            <a href="../html/bienvenida.html" class="logo-link">← IMPULSO LABORAL</a>
+            
+            <div class="form-tabs">
+                <div class="form-tab active" onclick="switchTab('login')">Iniciar Sesión</div>
+                <div class="form-tab" onclick="switchTab('register')">Registrarse</div>
+            </div>
+
+            <!-- Login Form -->
+            <div id="login-form" class="form-content active">
+                <form>
+                    <div class="form-group">
+                        <label for="login-email">Correo electrónico</label>
+                        <input type="email" id="login-email" placeholder="tu@correo.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="login-password">Contraseña</label>
+                        <div class="password-input">
+                            <input type="password" id="login-password" placeholder="Tu contraseña" required>
+                            <span class="toggle-password" onclick="togglePassword('login-password')">👁️</span>
+                        </div>
+                    </div>
+
+                    <div class="form-options">
+                        <label class="remember-me">
+                            <input type="checkbox" id="remember">
+                            Recordarme
+                        </label>
+                        <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Iniciar Sesión</button>
+
+                    <div class="divider">
+                        <span>O continúa con</span>
+                    </div>
+
+                    <div class="social-login">
+                        <button type="button" class="social-btn">
+                            <span>🔵</span> Google
+                        </button>
+                        <button type="button" class="social-btn">
+                            <span>📘</span> LinkedIn
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Register Form -->
+            <div id="register-form" class="form-content">
+                <div class="user-type-selector">
+                    <div class="user-type selected" onclick="selectUserType(this)">
+                        <div class="user-type-icon">👤</div>
+                        <div class="user-type-title">Candidato</div>
+                        <div class="user-type-desc">Busco empleo</div>
+                    </div>
+                    <div class="user-type" onclick="selectUserType(this)">
+                        <div class="user-type-icon">🏢</div>
+                        <div class="user-type-title">Empresa</div>
+                        <div class="user-type-desc">Busco talento</div>
+                    </div>
+                </div>
+
+                <form>
+                    <div class="form-group">
+                        <label for="register-name">Nombre completo</label>
+                        <input type="text" id="register-name" placeholder="Juan Pérez" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="register-email">Correo electrónico</label>
+                        <input type="email" id="register-email" placeholder="tu@correo.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="register-password">Contraseña</label>
+                        <div class="password-input">
+                            <input type="password" id="register-password" placeholder="Mínimo 8 caracteres" required>
+                            <span class="toggle-password" onclick="togglePassword('register-password')">👁️</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="register-confirm">Confirmar contraseña</label>
+                        <div class="password-input">
+                            <input type="password" id="register-confirm" placeholder="Repite tu contraseña" required>
+                            <span class="toggle-password" onclick="togglePassword('register-confirm')">👁️</span>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Crear Cuenta</button>
+
+                    <div class="divider">
+                        <span>O regístrate con</span>
+                    </div>
+
+                    <div class="social-login">
+                        <button type="button" class="social-btn">
+                            <span>🔵</span> Google
+                        </button>
+                        <button type="button" class="social-btn">
+                            <span>📘</span> LinkedIn
+                        </button>
+                    </div>
+
+                    <div class="terms">
+                        Al registrarte, aceptas nuestros <a href="#">Términos de Servicio</a> y <a href="#">Política de Privacidad</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function switchTab(tabName) {
+            // Update tabs
+            const tabs = document.querySelectorAll('.form-tab');
+            tabs.forEach(tab => tab.classList.remove('active'));
+            event.target.classList.add('active');
+
+            // Update forms
+            const forms = document.querySelectorAll('.form-content');
+            forms.forEach(form => form.classList.remove('active'));
+            
+            if (tabName === 'login') {
+                document.getElementById('login-form').classList.add('active');
+            } else {
+                document.getElementById('register-form').classList.add('active');
+            }
+        }
+
+        function togglePassword(inputId) {
+            const input = document.getElementById(inputId);
+            if (input.type === 'password') {
+                input.type = 'text';
+            } else {
+                input.type = 'password';
+            }
+        }
+
+        function selectUserType(element) {
+            const types = document.querySelectorAll('.user-type');
+            types.forEach(type => type.classList.remove('selected'));
+            element.classList.add('selected');
+        }
+
+        // Form submission handlers
+        document.getElementById('login-form').querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('¡Inicio de sesión exitoso! Redirigiendo...');
+            window.location.href = '../html/bienvenida.html';
+        });
+
+        document.getElementById('register-form').querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const password = document.getElementById('register-password').value;
+            const confirm = document.getElementById('register-confirm').value;
+            
+            if (password !== confirm) {
+                alert('Las contraseñas no coinciden');
+                return;
+            }
+            
+            if (password.length < 8) {
+                alert('La contraseña debe tener al menos 8 caracteres');
+                return;
+            }
+            
+             alert('¡Registro exitoso! Bienvenido a Impulso Laboral');
+             window.location.href = '../html/bienvenida.html';
+        });
+    </script>
+</body>
+</html>

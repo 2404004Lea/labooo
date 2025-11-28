@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacantes - Impulso Laboral</title>
+    <link rel="stylesheet" href="../css/vacantes.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <a href="bienvenida.html" class="logo">IMPULSO LABORAL</a>
+            <nav>
+                <a href="bienvenida.html">Inicio</a>
+                <a href="vacantes.html">Vacantes</a>
+                <a href="empresa.html">Empresas</a>
+                <a href="#blog">Blog</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <h1>Encuentra tu próxima oportunidad</h1>
+        <p>Explora miles de vacantes de las mejores empresas</p>
+    </section>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Filters Sidebar -->
+        <aside class="filters-sidebar">
+            <h3>Filtros</h3>
+            
+            <div class="filter-group">
+                <h4>Tipo de empleo</h4>
+                <div class="filter-option">
+                    <input type="checkbox" id="tiempo-completo">
+                    <label for="tiempo-completo">Tiempo completo</label>
+                </div>
+                <div class="filter-option">
+                    <input type="checkbox" id="medio-tiempo">
+                    <label for="medio-tiempo">Medio tiempo</label>
+                </div>
+                <div class="filter-option">
+                    <input type="checkbox" id="freelance">
+                    <label for="freelance">Freelance</label>
+                </div>
+            </div>
+
+            <div class="filter-group">
+                <h4>Modalidad</h4>
+                <div class="filter-option">
+                    <input type="checkbox" id="presencial">
+                    <label for="presencial">Presencial</label>
+                </div>
+                <div class="filter-option">
+                    <input type="checkbox" id="remoto">
+                    <label for="remoto">Remoto</label>
+                </div>
+                <div class="filter-option">
+                    <input type="checkbox" id="hibrido">
+                    <label for="hibrido">Híbrido</label>
+                </div>
+            </div>
+
+            <div class="filter-group">
+                <h4>Experiencia</h4>
+                <div class="filter-option">
+                    <input type="checkbox" id="sin-experiencia">
+                    <label for="sin-experiencia">Sin experiencia</label>
+                </div>
+                <div class="filter-option">
+                    <input type="checkbox" id="junior">
+                    <label for="junior">Junior (1-3 años)</label>
+                </div>
+                <div class="filter-option">
+                    <input type="checkbox" id="mid">
+                    <label for="mid">Mid (3-5 años)</label>
+                </div>
+                <div class="filter-option">
+                    <input type="checkbox" id="senior">
+                    <label for="senior">Senior (5+ años)</label>
+                </div>
+            </div>
+
+            <button class="filter-btn">Aplicar filtros</button>
+        </aside>
+
+        <!-- Vacantes List -->
+        <div>
+            <div class="search-bar">
+                <div class="search-input-group">
+                    <input type="text" class="search-input" placeholder="Buscar por puesto o palabra clave...">
+                    <input type="text" class="search-input" placeholder="Ubicación">
+                    <button class="search-btn">Buscar</button>
+                </div>
+            </div>
+
+            <div class="results-count">
+                Mostrando <strong>124 vacantes</strong> disponibles
+            </div>
+
+            <div class="vacantes-list">
+                <!-- Vacante 1 -->
+                <div class="vacante-card">
+                    <div class="vacante-header">
+                        <div class="vacante-info">
+                            <h3>Ingeniero de Software Full Stack</h3>
+                            <div class="company-name">MAGNA International</div>
+                            <div class="vacante-meta">
+                                <div class="meta-item">
+                                    <span>📍</span>
+                                    <span>Ramos Arizpe, Coahuila</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span>💼</span>
+                                    <span>Tiempo completo</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span>🏠</span>
+                                    <span>Híbrido</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span>⏰</span>
+                                    <span>Publicado hace 2 días</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="company-logo">MAGNA</div>
+                    </div>
+                    <p class="vacante-description">
+                        Buscamos un ingeniero de software con experiencia en desarrollo full stack para unirse a nuestro equipo de tecnología. Trabajarás en proyectos innovadores utilizando las últimas tecnologías y metodologías ágiles.
+                    </p>
+                    <div class="vacante-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">TypeScript</span>
+                        <span class="tag">AWS</span>
+                    </div>
+                    <div class="vacante-footer">
+                        <div class="salary">$35,000 - $45,000 MXN</div>
+                        <button class="apply-btn">Aplicar ahora</button>
+                    </div>
+                </div>
+
+                <!-- Vacante 2 -->
+                <div class="vacante-card">
+                    <div class="vacante-header">
+                        <div class="vacante-info">
+                            <h3>Especialista en Marketing Digital</h3>
+                            <div class="company-name">General Motors</div>
+                            <div class="vacante-meta">
+                                <div class="meta-item">
+                                    <span>📍</span>
+                                    <span>Saltillo, Coahuila</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span>💼</span>
+                                    <span>Tiempo completo</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span>🏠</span>
+                                    <span>Presencial</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span>⏰</span>
+                                    <span>Publicado hace 5 días</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="company-logo">GM</div>
+                    </div>
+                    <p class="vacante-description">
+                        Estamos buscando un especialista en marketing digital creativo y orientado a resultados. Serás responsable de desarrollar y ejecutar estrategias de marketing en línea para impulsar el crecimiento de nuestra marca.
+                    </p>
+                    <div class="vacante-tags">
+                        <span class="tag">SEO/SEM</span>
+                        <span class="tag">Google Ads</span>
+                        <span class="tag">Social Media</span>
+                        <span class="tag">Analytics</span>
+                    </div>
+                    <div class="vacante-footer">
+                        <div class="salary">$28,000 - $38,000 MXN</div>
+                        <button class="apply-btn">Aplicar ahora</button>
+                    </div>
+                </div>
+
+                <!-- Vacante 3 -->
+                <div class="vacante-card">
+                    <div class="vacante-header">
+                        <div class="vacante-info">
+                            <h3>Diseñador UX/UI Senior</h3>
+                            <div class="company-name">MAHLE</div>
+                            <div class="vacante-meta">
+                                <div class="meta-item">
+                                    <span>📍</span>
+                                    <span>Ramos Arizpe, Coahuila</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span>💼</span>
+                                    <span>Tiempo completo</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span>🏠</span>
+                                    <span>Remoto</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span>⏰</span>
+                                    <span>Publicado hace 1 semana</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="company-logo">MAHLE</div>
+                    </div>
+                    <p class="vacante-description">
+                        Buscamos un diseñador UX/UI senior apasionado por crear experiencias de usuario excepcionales. Trabajarás con equipos multidisciplinarios para diseñar interfaces intuitivas y atractivas.
+                    </p>
+                    <div class="vacante-tags">
+                        <span class="tag">Figma</span>
+                        <span class="tag">Adobe XD</span>
+                        <span class="tag">Prototyping</span>
+                        <span class="tag">User Research</span>
+                    </div>
+                    <div class="vacante-footer">
+                        <div class="salary">$32,000 - $42,000 MXN</div>
+                        <button class="apply-btn">Aplicar ahora</button>
+                    </div>
+                </div>
+
+                <!-- Vacante 4 -->
+                <div class="vacante-card">
+                    <div class="vacante-header">
+                        <div class="vacante-info">
+                            <h3>Gerente de Ventas Regional</h3>
+                            <div class="company-name">Gestamp</div>
+                            <div class="vacante-meta">
+                                <div class="meta-item">
+                                    <span>📍</span>
+                                    <span>Monterrey, Nuevo León</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span>💼</span>
+                                    <span>Tiempo completo</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span>🏠</span>
+                                    <span>Presencial</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span>⏰</span>
+                                    <span>Publicado hace 3 días</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="company-logo">Gestamp</div>
+                    </div>
+                    <p class="vacante-description">
+                        Estamos en búsqueda de un gerente de ventas con experiencia comprobada en liderazgo de equipos comerciales. Serás responsable de desarrollar estrategias de ventas y alcanzar objetivos ambiciosos.
+                    </p>
+                    <div class="vacante-tags">
+                        <span class="tag">Liderazgo</span>
+                        <span class="tag">Ventas B2B</span>
+                        <span class="tag">CRM</span>
+                        <span class="tag">Negociación</span>
+                    </div>
+                    <div class="vacante-footer">
+                        <div class="salary">$40,000 - $55,000 MXN</div>
+                        <button class="apply-btn">Aplicar ahora</button>
+                    </div>
+                </div>
+
+                <!-- Vacante 5 -->
+                <div class="vacante-card">
+                    <div class="vacante-header">
+                        <div class="vacante-info">
+                            <h3>Analista de Datos</h3>
+                            <div class="company-name">LEAR Corporation</div>
+                            <div class="vacante-meta">
+                                <div class="meta-item">
+                                    <span>📍</span>
+                                    <span>Ramos Arizpe, Coahuila</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span>💼</span>
+                                    <span>Tiempo completo</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span>🏠</span>
+                                    <span>Híbrido</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span>⏰</span>
+                                    <span>Publicado hace 4 días</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="company-logo">LEAR</div>
+                    </div>
+                    <p class="vacante-description">
+                        Buscamos un analista de datos para unirse a nuestro equipo de inteligencia de negocios. Serás responsable de analizar datos complejos y proporcionar insights que impulsen decisiones estratégicas.
+                    </p>
+                    <div class="vacante-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">SQL</span>
+                        <span class="tag">Power BI</span>
+                        <span class="tag">Excel</span>
+                    </div>
+                    <div class="vacante-footer">
+                        <div class="salary">$30,000 - $40,000 MXN</div>
+                        <button class="apply-btn">Aplicar ahora</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>IMPULSO LABORAL</h4>
+                <p style="color: #aaa; font-size: 14px;">Conectando talento con oportunidades desde 2024</p>
+            </div>
+            <div class="footer-section">
+                <h4>Para Candidatos</h4>
+                <ul>
+                    <li><a href="vacantes.html">Buscar Empleos</a></li>
+                    <li><a href="#">Crear Perfil</a></li>
+                    <li><a href="#">Subir CV</a></li>
+                    <li><a href="#">Consejos</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Para Empresas</h4>
+                <ul>
+                    <li><a href="#">Publicar Vacante</a></li>
+                    <li><a href="#">Buscar Candidatos</a></li>
+                    <li><a href="#">Planes</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contacto</h4>
+                <ul>
+                    <li><a href="#">Sobre Nosotros</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Privacidad</a></li>
+                    <li><a href="#">Términos</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Impulso Laboral. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
